@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 006</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.0em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: gray;
+            color: white;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th{
+            background-color: gray;
+            color: white;
+        }
+        .cnome{
+            background-color:antiquewhite
+        }
+        .cidade{
+            background-color:aqua
+        }
+        .csexo{
+            background-color:aquamarine
+        }
+        .cprofissao{
+            background-color:azure
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabela</h1>
+    <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="cidade">
+        <col class="csexo" span="2">
+
+        </colgroup>
+        <caption>Dados pessoais</caption>
+        <tr>
+            <td scope="col">Nome</td>
+            <td scope="col">Idade</td>
+            <td scope="col">Sexo</td>
+            <td scope="col">Profissão</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>20</td>
+            <td>Masculino</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>21</td>
+            <td>Feminino</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>22</td>
+            <td>Masculino</td>
+            <td>Engenheiro</td>
+        </tr>
+    </table>
+</body>
+</html>
